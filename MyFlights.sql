@@ -55,3 +55,5 @@ ALTER TABLE FlightsData ADD FOREIGN KEY (Origin) REFERENCES Airports(IATA_CODE);
 ALTER TABLE FlightsData ADD FOREIGN KEY (Destination) REFERENCES Airports(IATA_CODE);
 ALTER TABLE Reservations ADD FOREIGN KEY (Username) REFERENCES UserData(Username);
 ALTER TABLE Reservations ADD FOREIGN KEY (FlightID) REFERENCES FlightsData(ID);
+
+INSERT INTO USERDATA VALUES ("admin","admin","AdminName", "AdminSurname","admin@myflights.com");
