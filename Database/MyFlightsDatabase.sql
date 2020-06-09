@@ -52,6 +52,7 @@ CREATE TABLE Reservations
 	ReservationID	INT AUTO_INCREMENT,
 	Username		VARCHAR(12) 	NOT NULL,
 	FlightID		INT	NOT NULL,
+	NumberOfTickets INT NOT NULL,
 	PRIMARY KEY(ReservationID)
 	
 ) ENGINE=InnoDB;
@@ -97,6 +98,6 @@ INSERT INTO City VALUES
 ("NYC","New York City","USA");
 
 
-INSERT INTO Reservations (Username,FlightID) VALUES
-("admin","1"),
-("Jan1234","1");
+INSERT INTO Reservations (Username,FlightID,NumberOfTickets) VALUES
+("admin","1","2"),
+("Jan1234","1","1");

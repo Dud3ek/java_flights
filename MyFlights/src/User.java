@@ -5,7 +5,12 @@ import java.util.ArrayList;
 
 import javax.swing.JOptionPane;
 
-//Metody zwi¹zane z Userem i jego danymi -> Tu chyba wszystko
+/* Metody zwi¹zane z Userem i jego danymi -> Tu chyba wszystko:
+Login
+Register
+ShowUserData - pokazuje dane usera który jest zalogowany (stworzona jest jego klasa)
+ChangePassword - zmienia has³o zalogowanego usera
+*/
 public class User {
 	
 	String username = new String();
