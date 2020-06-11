@@ -7,9 +7,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
-
 import net.proteanit.sql.DbUtils;
-
 import javax.swing.JButton;
 import java.awt.SystemColor;
 import java.awt.event.ActionEvent;
@@ -20,14 +18,16 @@ import java.sql.ResultSet;
 
 import javax.swing.JTable;
 import javax.swing.JScrollPane;
+import javax.swing.JTextField;
 
 
 @SuppressWarnings("serial")
 public class GUI extends JPanel {
-
+	
 	private final static int defWidth = 300;
 	private final static int defHeight = 400;
 	private static JTable table;
+	private static JTable table2;
 	
 
 private static void createGUI() {
@@ -66,6 +66,7 @@ private static void createGUI() {
 	
 	JPanel panel1 = new JPanel();
 	JPanel reservations = new JPanel();
+	JPanel fly = new JPanel();
 	
 	//main panel
 	
@@ -109,6 +110,12 @@ private static void createGUI() {
 	panel1.add(button1_1);
 	
 	JButton button1_2 = new JGradientButton("<html> <center> List of all flights </html>");
+	button1_2.addActionListener(new ActionListener() {
+		public void actionPerformed(ActionEvent e) {
+			f.setContentPane(fly);
+			f.pack();
+		}
+	});
 	button1_2.setFont(new Font("Source Serif Pro Black", Font.ITALIC, 14));
 	button1_2.setForeground(purple);
 	button1_2.setBackground(white);
@@ -172,7 +179,7 @@ private static void createGUI() {
 	showtabBut.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			try {
-				String query="select * from FlightsData";
+				String query="select * from Reservations";
 				PreparedStatement pst = conn.prepareStatement(query);
 				ResultSet rs = pst.executeQuery();
 				table.setModel(DbUtils.resultSetToTableModel(rs));
@@ -198,6 +205,62 @@ private static void createGUI() {
 	backButton.setFont(new Font("Source Serif Pro Black", Font.ITALIC, 14));
 	backButton.setBounds(210, 92, 170, 23);
 	reservations.add(backButton);
+	
+	// All flights panel
+	
+	fly.setPreferredSize(new Dimension(defHeight, defWidth));
+	fly.setBackground(purple);
+	fly.setLayout(null);
+	
+	JLabel label3_1 = new JLabel("Your reservations");
+	label3_1.setForeground(white);
+	label3_1.setHorizontalAlignment(SwingConstants.CENTER);
+	label3_1.setFont(new Font("Source Serif Pro Black", Font.ITALIC, 36));
+	label3_1.setBounds(10, 11, 380, 70);
+	fly.add(label3_1);
+	
+	JScrollPane scrollPane2 = new JScrollPane();
+	scrollPane2.setBounds(20, 120, 360, 160);
+	fly.add(scrollPane2);
+	
+	table2 = new JTable();
+	scrollPane2.setViewportView(table2);
+	
+	JButton showflyBut = new JGradientButton("Show all flights");
+	showflyBut.addActionListener(new ActionListener() {
+		public void actionPerformed(ActionEvent e) {
+			try {
+				String query="select * from FlightsData";
+				PreparedStatement pst = conn.prepareStatement(query);
+				ResultSet rs = pst.executeQuery();
+				table2.setModel(DbUtils.resultSetToTableModel(rs));
+			}
+			
+			catch (Exception exept) {
+				exept.printStackTrace();
+			}
+			
+		}
+	});
+	showflyBut.setFont(new Font("Source Serif Pro Black", Font.ITALIC, 14));
+	showflyBut.setBounds(20, 92, 170, 23);
+	fly.add(showflyBut);
+	
+	JButton backButton2 = new JGradientButton("Back to menu");
+	backButton2.addActionListener(new ActionListener() {
+		public void actionPerformed(ActionEvent e) {
+			f.setContentPane(panel1);
+			f.pack();
+		}
+	});
+	backButton2.setFont(new Font("Source Serif Pro Black", Font.ITALIC, 14));
+	backButton2.setBounds(210, 92, 170, 23);	
+	fly.add(backButton2);
+	
+	//Personal data panel
+	
+	
+	
 	
 	
 	f.setContentPane(panel1);
