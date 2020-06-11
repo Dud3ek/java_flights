@@ -6,10 +6,11 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/48531/eclipse/mysql-connector-java-8.0.19/mysql-connector-java-8.0.19.jar">
+	<classpathentry kind="lib" path="D:/ProgramFiles/MyProjects/Java/javaflights2/java_flights-master/MyFlights/mysql-connector-java-8.0.20.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="D:/ProgramFiles/MyProjects/Java/javaflights2/java_flights-master/MyFlights/rs2xml.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
