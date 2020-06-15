@@ -5,7 +5,7 @@ public class Program {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("hello flights");
-		DBConnection obj1 = new DBConnection();
+		//DBConnection obj1 = new DBConnection();
 		User user1 = new User();
 		user1.Login("admin","adminPass");
 		user1.Register("NewUser","newuserpass","Jan","Kowalski","jankowal@gmail.com");

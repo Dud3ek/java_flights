@@ -1,39 +1,43 @@
-import java.awt.BorderLayout;
-import java.awt.CardLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import net.proteanit.sql.DbUtils;
 import javax.swing.JButton;
-import java.awt.SystemColor;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-
 import javax.swing.JTable;
 import javax.swing.JScrollPane;
 import javax.swing.JTextField;
+import javax.swing.JPasswordField;
 
 
 @SuppressWarnings("serial")
 public class GUI extends JPanel {
 	
-	private final static int defWidth = 300;
-	private final static int defHeight = 400;
+	private final static int defH = 300;
+	private final static int defW = 400;
 	private static JTable table;
 	private static JTable table2;
-	
+	private static Color white = new Color(238, 238, 238);
+	private static Color purple = new Color(8, 11, 63);
+	private static JTextField loginfield;
+	private static JPasswordField passwordfield;
 
+	
 private static void createGUI() {
 	
 	JFrame f = new JFrame("DBAir");
-	java.sql.Connection conn = DBConnection.ConnectDB();
+	User user = new User();
+	
+	/*
 	
 	final String previous = "Previous";
 	final String next = "Next";
@@ -48,10 +52,7 @@ private static void createGUI() {
 		}
 	};
 	
-	Color white = new Color(238, 238, 238);
-	Color purple = new Color(8, 11, 63);
-	
-	/*
+
 	JPanel control = new JPanel();
 	control.setPreferredSize(new Dimension(defWidth, defHeight));
 	
@@ -67,12 +68,13 @@ private static void createGUI() {
 	JPanel panel1 = new JPanel();
 	JPanel reservations = new JPanel();
 	JPanel fly = new JPanel();
+	JPanel login = new JPanel();
 	
 	//main panel
 	
 	panel1.setBackground(purple);
 	panel1.setLayout(null);
-	panel1.setPreferredSize(new Dimension(defHeight, defWidth));
+	panel1.setPreferredSize(new Dimension(defW, defH));
 	
 	JLabel label1_1 = new JLabel("Welcome to our");
 	label1_1.setBounds(10, 11, 380, 25);
@@ -136,7 +138,7 @@ private static void createGUI() {
 	button1_4.setBounds(270, 152, 120, 60);
 	panel1.add(button1_4);
 	
-	JButton button1_5 = new JGradientButton("Logout");
+	JButton button1_5 = new JGradientButton("<html> <center> Make reservation </html>");
 	button1_5.setFont(new Font("Source Serif Pro Black", Font.ITALIC, 14));
 	button1_5.setForeground(purple);
 	button1_5.setBackground(white);
@@ -157,7 +159,7 @@ private static void createGUI() {
 	
 	//reservations panel
 
-	reservations.setPreferredSize(new Dimension(defHeight, defWidth));
+	reservations.setPreferredSize(new Dimension(defW, defH));
 	reservations.setBackground(purple);
 	reservations.setLayout(null);
 	
@@ -179,16 +181,16 @@ private static void createGUI() {
 	showtabBut.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			try {
+				java.sql.Connection conn = DBConnection.ConnectDB();
 				String query="select * from Reservations";
 				PreparedStatement pst = conn.prepareStatement(query);
 				ResultSet rs = pst.executeQuery();
 				table.setModel(DbUtils.resultSetToTableModel(rs));
+				conn.close();		
 			}
-			
 			catch (Exception exept) {
 				exept.printStackTrace();
-			}
-			
+			}	
 		}
 	});
 	showtabBut.setFont(new Font("Source Serif Pro Black", Font.ITALIC, 14));
@@ -208,7 +210,7 @@ private static void createGUI() {
 	
 	// All flights panel
 	
-	fly.setPreferredSize(new Dimension(defHeight, defWidth));
+	fly.setPreferredSize(new Dimension(defW, defH));
 	fly.setBackground(purple);
 	fly.setLayout(null);
 	
@@ -230,10 +232,12 @@ private static void createGUI() {
 	showflyBut.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			try {
+				java.sql.Connection conn = DBConnection.ConnectDB();
 				String query="select * from FlightsData";
 				PreparedStatement pst = conn.prepareStatement(query);
 				ResultSet rs = pst.executeQuery();
 				table2.setModel(DbUtils.resultSetToTableModel(rs));
+				conn.close();
 			}
 			
 			catch (Exception exept) {
@@ -257,13 +261,68 @@ private static void createGUI() {
 	backButton2.setBounds(210, 92, 170, 23);	
 	fly.add(backButton2);
 	
-	//Personal data panel
+	// Login Panel
 	
+	login.setPreferredSize(new Dimension(defW, defH));
+	login.setBackground(purple);
+	login.setLayout(null);
 	
+	JLabel loginlabel1 = new JLabel("DBAir Login");
+	loginlabel1.setForeground(white);
+	loginlabel1.setHorizontalAlignment(SwingConstants.CENTER);
+	loginlabel1.setFont(new Font("Source Serif Pro Black", Font.ITALIC, 36));
+	loginlabel1.setBounds(10, 11, 380, 70);
+	login.add(loginlabel1);
 	
+	loginfield = new JTextField();
+	loginfield.setBounds(152, 107, 138, 20);
+	login.add(loginfield);
+	loginfield.setColumns(10);
 	
+	JLabel loginlabel2 = new JLabel("Username");
+	loginlabel2.setForeground(white);
+	loginlabel2.setFont(new Font("Tahoma", Font.BOLD, 11));
+	loginlabel2.setBounds(77, 110, 65, 14);
+	login.add(loginlabel2);
 	
-	f.setContentPane(panel1);
+	JLabel loginlabel3 = new JLabel("Password");
+	loginlabel3.setForeground(white);
+	loginlabel3.setFont(new Font("Tahoma", Font.BOLD, 11));
+	loginlabel3.setBounds(77, 141, 65, 14);
+	login.add(loginlabel3);
+	
+	passwordfield = new JPasswordField();
+	passwordfield.setBounds(152, 138, 138, 20);
+	login.add(passwordfield);
+	
+	JButton loginbutton = new JGradientButton("Login");
+	loginbutton.addActionListener(new ActionListener() {
+		@SuppressWarnings("deprecation")
+		public void actionPerformed(ActionEvent e) {
+			try {
+				String uname = loginfield.getText();
+				String pass = passwordfield.getText();
+				System.out.println(uname);
+				System.out.println(pass);
+				user.Login(uname, pass);
+				if(user.op == 1) {
+					f.setContentPane(panel1);
+					f.pack();
+				}
+			}
+			catch(Exception except)
+			{
+				JOptionPane.showMessageDialog(null, e);
+			}
+			
+			
+		}
+	});
+	loginbutton.setFont(new Font("Tahoma", Font.BOLD, 11));
+	loginbutton.setBounds(170, 189, 89, 23);
+	login.add(loginbutton);
+	
+	f.setContentPane(login);
 	
 	f.pack();
 	f.setLocationRelativeTo(null);

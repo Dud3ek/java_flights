@@ -14,10 +14,11 @@ ChangePassword - zmienia has³o zalogowanego usera
 public class User {
 	
 	String username = new String();
-	
+	public int op = 0;
 
 	public void Login(String n_username,String n_password)
 	{
+		
 		try {
 			java.sql.Connection conn = DBConnection.ConnectDB();
 			String query = "SELECT Username,Password FROM UserData where Username=\""+n_username+"\"AND Password=\""+n_password+"\"";
@@ -28,13 +29,13 @@ public class User {
 				{
 					JOptionPane.showMessageDialog(null, "You are logged");
 					username=n_username;
+					op = 1;
 				}
 				else 
 				{
 					JOptionPane.showMessageDialog(null, "Authentication failure");
-				}
+				}	
 				conn.close();	
-				
 			}
 		catch(Exception e1)	{JOptionPane.showMessageDialog(null, e1);}
 	}
