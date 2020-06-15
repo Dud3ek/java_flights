@@ -1,9 +1,10 @@
+package project;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.util.ArrayList;
-
 import javax.swing.JOptionPane;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 
 /* Metody zwi¹zane z Userem i jego danymi -> Tu chyba wszystko:
 Login
@@ -13,12 +14,18 @@ ChangePassword - zmienia has³o zalogowanego usera
 */
 public class User {
 	
+	static Logger logger = Logger.getLogger(User.class);
+	
 	String username = new String();
 	public int op = 0;
 
+	public User(){
+		PropertyConfigurator.configure("log4j.properties");
+		logger.trace("User profile initialized");
+	}
+	
 	public void Login(String n_username,String n_password)
 	{
-		
 		try {
 			java.sql.Connection conn = DBConnection.ConnectDB();
 			String query = "SELECT Username,Password FROM UserData where Username=\""+n_username+"\"AND Password=\""+n_password+"\"";
@@ -34,10 +41,12 @@ public class User {
 				else 
 				{
 					JOptionPane.showMessageDialog(null, "Authentication failure");
+					
 				}	
 				conn.close();	
 			}
-		catch(Exception e1)	{JOptionPane.showMessageDialog(null, e1);}
+		catch(Exception e1)	{JOptionPane.showMessageDialog(null, "Connection failure");
+		logger.error(e1);}
 	}
 	
 	public void Register(String n_username,String n_password,String n_name, String n_surname, String n_email )

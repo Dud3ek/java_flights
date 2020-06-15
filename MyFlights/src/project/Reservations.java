@@ -1,3 +1,4 @@
+package project;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
@@ -12,7 +13,7 @@ public class Reservations {
 
  */
 	
-	public void Reserve(String username, int FlightID,int numberOfTickets )
+	public static void Reserve(String username, int FlightID,int numberOfTickets )
 	{
 		try {
 			java.sql.Connection conn = DBConnection.ConnectDB();
@@ -45,7 +46,7 @@ public class Reservations {
 		}
 		catch(Exception e1){JOptionPane.showMessageDialog(null, e1);}
 	}
-	public void CancelReservation(String username, int ReservationID)
+	public static void CancelReservation(String username, int ReservationID)
 	{
 		try {
 			java.sql.Connection conn = DBConnection.ConnectDB();
@@ -60,8 +61,7 @@ public class Reservations {
 		
 			ResultSet rs = stmt1.executeQuery();
 			rs.next();
-			System.out.println(rs.getString(1));
-			System.out.println("Username: "+username);
+			
 			if(username.contentEquals(rs.getString(1)))
 			{
 				stmt3.setInt(1, rs.getInt(2));
@@ -94,7 +94,7 @@ public class Reservations {
 	public static ResultSet ShowUserReservations(java.sql.Connection conn, String username) {	
 		try {
 			
-			String query = "SELECT * FROM Reservations where User="+username;
+			String query = "SELECT * FROM Reservations where Username=\""+username+"\"";
 			PreparedStatement stmt = conn.prepareStatement(query);
 			ResultSet rs = stmt.executeQuery();
 			return rs;

@@ -1,0 +1,342 @@
+INFO    2020-06-15 17:32:08,243 [main] project.Program  - New program startup
+INFO    2020-06-15 17:34:05,294 [main] project.Program  - New program startup
+TRACE   2020-06-15 17:34:05,468 [AWT-EventQueue-0] project.User  - User profile initialized
+DEBUG   2020-06-15 17:34:54,978 [main] project.Program  - New program startup
+TRACE   2020-06-15 17:34:55,151 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 17:35:53,215 [main] project.Program  - New program startup
+TRACE   2020-06-15 17:35:53,390 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 17:37:01,571 [main] project.Program  - New program startup
+TRACE   2020-06-15 17:37:01,745 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 17:37:32,814 [main] project.Program  - New program startup
+TRACE   2020-06-15 17:37:32,989 [AWT-EventQueue-0] project.User  - User profile initialized
+ERROR   2020-06-15 17:38:07,901 [AWT-EventQueue-0] project.User  - java.lang.NullPointerException
+INFO    2020-06-15 17:41:21,834 [main] project.Program  - New program startup
+TRACE   2020-06-15 17:41:22,044 [AWT-EventQueue-0] project.User  - User profile initialized
+ERROR   2020-06-15 17:41:49,704 [AWT-EventQueue-0] project.Program  - com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+ERROR   2020-06-15 17:41:53,439 [AWT-EventQueue-0] project.User  - java.lang.NullPointerException
+INFO    2020-06-15 18:27:45,378 [main] project.Program  - New program startup
+TRACE   2020-06-15 18:27:45,568 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 18:31:49,630 [main] project.Program  - New program startup
+TRACE   2020-06-15 18:31:49,801 [AWT-EventQueue-0] project.User  - User profile initialized
+ERROR   2020-06-15 18:32:14,554 [AWT-EventQueue-0] project.Program  - com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+ERROR   2020-06-15 18:32:16,907 [AWT-EventQueue-0] project.User  - java.lang.NullPointerException
+INFO    2020-06-15 18:32:32,456 [main] project.Program  - New program startup
+TRACE   2020-06-15 18:32:32,618 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 18:33:14,296 [main] project.Program  - New program startup
+TRACE   2020-06-15 18:33:14,467 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 18:33:58,390 [main] project.Program  - New program startup
+TRACE   2020-06-15 18:33:58,566 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 18:34:55,907 [main] project.Program  - New program startup
+TRACE   2020-06-15 18:34:56,078 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 18:35:14,175 [main] project.Program  - New program startup
+TRACE   2020-06-15 18:35:14,354 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 18:36:19,444 [main] project.Program  - New program startup
+TRACE   2020-06-15 18:36:19,624 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 18:41:06,389 [main] project.Program  - New program startup
+TRACE   2020-06-15 18:41:06,570 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 18:42:15,780 [main] project.Program  - New program startup
+TRACE   2020-06-15 18:42:15,964 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 18:45:18,086 [main] project.Program  - New program startup
+TRACE   2020-06-15 18:45:18,262 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 18:45:24,731 [AWT-EventQueue-0] project.Program  - Connection estabilished
+INFO    2020-06-15 18:45:30,906 [AWT-EventQueue-0] project.Program  - Connection estabilished
+INFO    2020-06-15 18:45:34,599 [AWT-EventQueue-0] project.Program  - Connection estabilished
+INFO    2020-06-15 18:46:04,829 [main] project.Program  - New program startup
+TRACE   2020-06-15 18:46:05,005 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 18:46:08,432 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 18:49:29,789 [main] project.Program  - New program startup
+TRACE   2020-06-15 18:49:29,964 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 18:49:33,435 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 18:49:37,588 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 18:49:40,844 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 18:50:09,845 [main] project.Program  - New program startup
+TRACE   2020-06-15 18:50:10,030 [AWT-EventQueue-0] project.User  - User profile initialized
+TRACE   2020-06-15 18:50:12,798 [AWT-EventQueue-0] project.Program  - Connect success
+TRACE   2020-06-15 18:50:15,853 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 19:15:47,659 [main] project.Program  - New program startup
+TRACE   2020-06-15 19:15:47,834 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 19:39:57,929 [main] project.Program  - New program startup
+TRACE   2020-06-15 19:39:58,108 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 19:40:33,481 [main] project.Program  - New program startup
+TRACE   2020-06-15 19:40:33,657 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 19:40:36,515 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 19:42:57,521 [main] project.Program  - New program startup
+TRACE   2020-06-15 19:42:57,720 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 19:43:00,318 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 19:48:26,039 [main] project.Program  - New program startup
+TRACE   2020-06-15 19:48:26,217 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 19:48:29,805 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 19:48:43,159 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 19:49:53,257 [main] project.Program  - New program startup
+TRACE   2020-06-15 19:49:53,434 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 19:49:56,628 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 19:49:59,554 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 19:50:01,204 [AWT-EventQueue-0] project.Program  - Connect success
+ERROR   2020-06-15 19:50:01,256 [AWT-EventQueue-0] project.Program  - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '" ORDER BY Origin' at line 1
+INFO    2020-06-15 19:50:04,464 [AWT-EventQueue-0] project.Program  - Connect success
+ERROR   2020-06-15 19:50:04,503 [AWT-EventQueue-0] project.Program  - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '" ORDER BY Destination' at line 1
+INFO    2020-06-15 19:50:22,610 [AWT-EventQueue-0] project.Program  - Connect success
+ERROR   2020-06-15 19:50:22,644 [AWT-EventQueue-0] project.Program  - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '" ORDER BY FlightDate' at line 1
+INFO    2020-06-15 19:50:24,686 [AWT-EventQueue-0] project.Program  - Connect success
+ERROR   2020-06-15 19:50:24,725 [AWT-EventQueue-0] project.Program  - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '" ORDER BY Airlines' at line 1
+INFO    2020-06-15 19:52:01,332 [main] project.Program  - New program startup
+TRACE   2020-06-15 19:52:01,511 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 19:52:04,630 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 19:52:07,425 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 19:52:10,250 [AWT-EventQueue-0] project.Program  - Connect success
+ERROR   2020-06-15 19:52:10,295 [AWT-EventQueue-0] project.Program  - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '" ORDER BY Origin' at line 1
+INFO    2020-06-15 19:54:00,581 [main] project.Program  - New program startup
+TRACE   2020-06-15 19:54:00,761 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 19:54:03,063 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 19:54:07,048 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 19:54:11,186 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 19:54:14,363 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 19:58:20,884 [main] project.Program  - New program startup
+TRACE   2020-06-15 19:58:21,064 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 19:58:26,797 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 19:58:29,930 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 19:58:31,787 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 19:58:33,649 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 19:58:36,081 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 19:58:38,544 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 19:58:40,745 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 19:58:46,164 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 19:58:54,876 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 19:59:08,355 [main] project.Program  - New program startup
+TRACE   2020-06-15 19:59:08,528 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 19:59:12,237 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 19:59:20,755 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 19:59:25,010 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:01:45,270 [main] project.Program  - New program startup
+TRACE   2020-06-15 20:01:45,446 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 20:01:55,041 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:02:06,462 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:02:12,427 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:02:12,742 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:02:17,163 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:02:21,519 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:06:21,441 [main] project.Program  - New program startup
+TRACE   2020-06-15 20:06:21,614 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 20:06:24,761 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:06:28,500 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:06:28,795 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:06:46,615 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:06:46,934 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:06:49,490 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:07:58,550 [main] project.Program  - New program startup
+TRACE   2020-06-15 20:07:58,724 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 20:08:01,961 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:08:05,224 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:08:18,316 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:08:52,296 [main] project.Program  - New program startup
+TRACE   2020-06-15 20:08:52,463 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 20:08:55,199 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:09:44,693 [main] project.Program  - New program startup
+TRACE   2020-06-15 20:09:44,872 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 20:09:47,989 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:09:52,243 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:09:54,758 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:09:56,203 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:10:48,277 [main] project.Program  - New program startup
+TRACE   2020-06-15 20:10:48,458 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 20:10:51,405 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:10:53,539 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:12:11,191 [main] project.Program  - New program startup
+TRACE   2020-06-15 20:12:11,365 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 20:12:13,844 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:12:16,648 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:12:35,260 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:12:37,103 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:12:38,422 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:12:42,883 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:12:44,921 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:13:25,018 [main] project.Program  - New program startup
+TRACE   2020-06-15 20:13:25,192 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 20:13:27,733 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:13:29,791 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:14:19,878 [main] project.Program  - New program startup
+TRACE   2020-06-15 20:14:20,050 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 20:14:22,844 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:14:27,632 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:15:07,211 [main] project.Program  - New program startup
+TRACE   2020-06-15 20:15:07,395 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 20:15:10,710 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:15:13,424 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:15:15,633 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:15:19,221 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:15:21,030 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:15:22,603 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:15:50,331 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:15:51,815 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:15:55,683 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:15:58,007 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:15:59,353 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:16:00,905 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:16:02,244 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:16:04,116 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:17:46,456 [main] project.Program  - New program startup
+TRACE   2020-06-15 20:17:46,646 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 20:17:49,604 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:17:52,270 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:18:28,935 [main] project.Program  - New program startup
+TRACE   2020-06-15 20:18:29,106 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 20:18:31,947 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:18:34,987 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:18:47,282 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:18:49,386 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:18:50,663 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:19:13,818 [main] project.Program  - New program startup
+TRACE   2020-06-15 20:19:13,995 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 20:19:18,643 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:19:20,905 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:19:23,860 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:19:25,998 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:20:24,280 [main] project.Program  - New program startup
+TRACE   2020-06-15 20:20:24,454 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 20:20:27,609 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:20:30,115 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:20:38,627 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:20:42,205 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:22:08,901 [main] project.Program  - New program startup
+TRACE   2020-06-15 20:22:09,072 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 20:22:11,975 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:22:14,486 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:22:21,370 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:22:23,382 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:22:26,020 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:22:31,295 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:23:33,286 [main] project.Program  - New program startup
+TRACE   2020-06-15 20:23:33,464 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 20:23:40,230 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:24:36,426 [main] project.Program  - New program startup
+TRACE   2020-06-15 20:24:36,600 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 20:24:44,502 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:24:50,793 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:25:08,153 [main] project.Program  - New program startup
+TRACE   2020-06-15 20:25:08,332 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 20:25:11,187 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:25:13,425 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:25:16,557 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:25:18,808 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:25:19,955 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:25:21,104 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:25:23,397 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:25:25,090 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:25:26,816 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 20:25:35,691 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:33:36,724 [main] project.Program  - New program startup
+TRACE   2020-06-15 23:33:36,913 [AWT-EventQueue-0] project.User  - User profile initialized
+ERROR   2020-06-15 23:34:01,434 [AWT-EventQueue-0] project.Program  - com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+ERROR   2020-06-15 23:34:04,536 [AWT-EventQueue-0] project.User  - java.lang.NullPointerException
+INFO    2020-06-15 23:34:06,545 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:35:55,461 [main] project.Program  - New program startup
+TRACE   2020-06-15 23:35:55,637 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 23:35:58,335 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:36:18,659 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:36:22,662 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:36:28,900 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:36:32,673 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:36:33,460 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:36:37,635 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:36:49,525 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:36:50,768 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:36:52,680 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:36:53,933 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:36:55,509 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:38:31,421 [main] project.Program  - New program startup
+TRACE   2020-06-15 23:38:31,608 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 23:38:35,492 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:38:37,772 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:39:09,103 [main] project.Program  - New program startup
+TRACE   2020-06-15 23:39:09,283 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 23:39:12,262 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:39:14,067 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:44:47,857 [main] project.Program  - New program startup
+TRACE   2020-06-15 23:44:48,035 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 23:44:50,369 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:45:39,537 [main] project.Program  - New program startup
+TRACE   2020-06-15 23:45:39,715 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 23:45:42,580 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:46:39,375 [main] project.Program  - New program startup
+TRACE   2020-06-15 23:46:39,581 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 23:46:41,779 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:46:55,044 [main] project.Program  - New program startup
+TRACE   2020-06-15 23:46:55,220 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 23:46:57,685 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:47:04,917 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:47:16,557 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:47:21,455 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:47:26,027 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:47:51,414 [main] project.Program  - New program startup
+TRACE   2020-06-15 23:47:51,616 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 23:49:16,976 [main] project.Program  - New program startup
+TRACE   2020-06-15 23:49:17,152 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 23:49:20,026 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:50:32,749 [main] project.Program  - New program startup
+TRACE   2020-06-15 23:50:32,921 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 23:50:43,279 [main] project.Program  - New program startup
+TRACE   2020-06-15 23:50:43,454 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 23:51:06,390 [main] project.Program  - New program startup
+TRACE   2020-06-15 23:51:06,566 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 23:51:17,363 [main] project.Program  - New program startup
+TRACE   2020-06-15 23:51:17,541 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 23:51:29,491 [main] project.Program  - New program startup
+TRACE   2020-06-15 23:51:29,666 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 23:51:44,686 [main] project.Program  - New program startup
+TRACE   2020-06-15 23:51:44,862 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 23:51:56,915 [main] project.Program  - New program startup
+TRACE   2020-06-15 23:51:57,088 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 23:52:05,182 [main] project.Program  - New program startup
+TRACE   2020-06-15 23:52:05,361 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 23:52:07,735 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:52:40,692 [main] project.Program  - New program startup
+TRACE   2020-06-15 23:52:40,871 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 23:53:07,287 [main] project.Program  - New program startup
+TRACE   2020-06-15 23:53:07,464 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 23:54:25,103 [main] project.Program  - New program startup
+TRACE   2020-06-15 23:54:25,289 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 23:54:29,624 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:54:35,585 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:55:35,241 [main] project.Program  - New program startup
+TRACE   2020-06-15 23:55:35,420 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 23:55:37,582 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:55:42,346 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:57:39,347 [main] project.Program  - New program startup
+TRACE   2020-06-15 23:57:39,525 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 23:57:42,777 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:57:46,301 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:57:49,496 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:57:54,109 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:57:54,790 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:57:55,972 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:58:05,564 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:58:17,734 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:58:18,148 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:58:22,715 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:58:27,109 [main] project.Program  - New program startup
+TRACE   2020-06-15 23:58:27,287 [AWT-EventQueue-0] project.User  - User profile initialized
+INFO    2020-06-15 23:58:29,845 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:58:32,763 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:58:36,318 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:58:42,348 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:58:46,198 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:58:49,131 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:58:49,568 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:58:49,964 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:58:50,313 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:58:50,652 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:58:50,990 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:58:55,530 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:58:57,634 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:58:59,656 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:59:01,563 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:59:03,418 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:59:06,262 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:59:08,189 [AWT-EventQueue-0] project.Program  - Connect success
+INFO    2020-06-15 23:59:18,500 [AWT-EventQueue-0] project.Program  - Connect success
