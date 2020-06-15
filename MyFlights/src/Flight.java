@@ -8,40 +8,56 @@ import javax.swing.JOptionPane;
 public class Flight {
 
 	
-	public void ShowFlights() {	
+	public static ResultSet ShowFlights(java.sql.Connection conn) {	
 		try {
-			java.sql.Connection conn = DBConnection.ConnectDB();
+			
 			String query = "SELECT * FROM FlightsData";
 			PreparedStatement stmt = conn.prepareStatement(query);
 			ResultSet rs = stmt.executeQuery();
-			ResultSetMetaData rsmd = rs.getMetaData();
-			int columnsNumber = rsmd.getColumnCount();
-				while (rs.next()) {
-				    for(int i = 1; i <= columnsNumber; i++)
-				       System.out.println(rs.getString(i));		 
-				}
-			conn.close();
+			return rs;
+			
 			}
 		catch(Exception e1){JOptionPane.showMessageDialog(null, e1);}
+		return null;
 	}
 	
 	
-	public void FilterID(int x)	//Trzeba wymyœliæ sposób jak to filtrowaæ, ¿eby nie pisaæ tysi¹ca funkcji
+	public ResultSet ShowOrderedFlights(int x, java.sql.Connection conn)	//Trzeba wymyœliæ sposób jak to filtrowaæ, ¿eby nie pisaæ tysi¹ca funkcji
 	{
+		String param = new String();
 		try {
-			java.sql.Connection conn = DBConnection.ConnectDB();
-			String query = "SELECT * FROM FlightsData where ID="+"\"";
+			switch(x) {
+			
+				case 1:
+					param="ID";
+					break;	
+				case 2:
+					param="Origin";
+					break;				
+				case 3:
+					param="Destination";
+					break;			
+				case 4:
+					param="FlightDate";
+					break;
+				case 5:
+					param="Airlines";
+					break;
+				case 6:
+					param="FreeSeats";
+					break;
+				case 7:
+					param="Price";
+					break;			
+			}
+			String query = "SELECT * FROM FlightsData where ID="+"\" ORDER BY "+param; 
 			PreparedStatement stmt = conn.prepareStatement(query);
 			ResultSet rs = stmt.executeQuery();
-			ResultSetMetaData rsmd = rs.getMetaData();
-			int columnsNumber = rsmd.getColumnCount();
-				while (rs.next()) {
-				    for(int i = 1; i <= columnsNumber; i++)
-				       System.out.println(rs.getString(i));		
-				}
-			conn.close();
-			}
-		catch(Exception e1){JOptionPane.showMessageDialog(null, e1);}		
+			return rs;
+		}
+			catch(Exception e1){JOptionPane.showMessageDialog(null, e1);}	
+			return null;
+		
 	}
 	
 }

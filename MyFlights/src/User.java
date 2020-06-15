@@ -75,25 +75,18 @@ public class User {
 		catch(Exception e1){JOptionPane.showMessageDialog(null, e1);}
 	}
 	
-	public ArrayList<String> ShowUserData()
+	public ResultSet ShowUserData(java.sql.Connection conn)
 	{
-		ArrayList<String> DataList = new ArrayList<String>();
 			try {
-				java.sql.Connection conn = DBConnection.ConnectDB();
+				
 				String query = "SELECT * FROM UserData where Username=\""+username+"\"";
 				PreparedStatement stmt = conn.prepareStatement(query);
 				ResultSet rs = stmt.executeQuery();
-				ResultSetMetaData rsmd = rs.getMetaData();
-				int columnsNumber = rsmd.getColumnCount();
-					while (rs.next()) {
-					    for(int i = 1; i <= columnsNumber; i++)
-					       DataList.add(rs.getString(i));		  
-					}
-				conn.close();
+				return rs;
 				}
 		catch(Exception e1){JOptionPane.showMessageDialog(null, e1);}
 		
-		return DataList;			
+		return null;			
 	}
 	
 	public void ChangePassword(String oldPassword, String newPassword)

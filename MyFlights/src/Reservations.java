@@ -79,5 +79,29 @@ public class Reservations {
 		}
 		catch(Exception e1){JOptionPane.showMessageDialog(null, e1);}
 	}
+	public static ResultSet ShowAllReservations(java.sql.Connection conn) {	
+		try {
+			
+			String query = "SELECT * FROM Reservations";
+			PreparedStatement stmt = conn.prepareStatement(query);
+			ResultSet rs = stmt.executeQuery();
+			return rs;
+			
+			}
+		catch(Exception e1){JOptionPane.showMessageDialog(null, e1);}
+		return null;
+	}
+	public static ResultSet ShowUserReservations(java.sql.Connection conn, String username) {	
+		try {
+			
+			String query = "SELECT * FROM Reservations where User="+username;
+			PreparedStatement stmt = conn.prepareStatement(query);
+			ResultSet rs = stmt.executeQuery();
+			return rs;
+			
+			}
+		catch(Exception e1){JOptionPane.showMessageDialog(null, e1);}
+		return null;
+	}
 	
 }

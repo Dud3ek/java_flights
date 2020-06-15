@@ -233,9 +233,8 @@ private static void createGUI() {
 		public void actionPerformed(ActionEvent e) {
 			try {
 				java.sql.Connection conn = DBConnection.ConnectDB();
-				String query="select * from FlightsData";
-				PreparedStatement pst = conn.prepareStatement(query);
-				ResultSet rs = pst.executeQuery();
+				Flight.ShowFlights(conn);
+				ResultSet rs = Flight.ShowFlights(conn);
 				table2.setModel(DbUtils.resultSetToTableModel(rs));
 				conn.close();
 			}
