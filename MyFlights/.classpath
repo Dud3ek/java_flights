@@ -6,12 +6,12 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/ProgramFiles/MyProjects/Java/javaflights2/java_flights-master/MyFlights/mysql-connector-java-8.0.20.jar">
+	<classpathentry kind="lib" path="C:/Users/48531/Desktop/MyFlights/java_flights/MyFlights/mysql-connector-java-8.0.20.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/ProgramFiles/MyProjects/Java/javaflights2/java_flights-master/MyFlights/rs2xml.jar"/>
-	<classpathentry kind="lib" path="D:/ProgramFiles/MyProjects/Java/javaflights2/java_flights-master/MyFlights/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/48531/Desktop/MyFlights/java_flights/MyFlights/rs2xml.jar"/>
+	<classpathentry kind="lib" path="C:/Users/48531/Desktop/MyFlights/java_flights/MyFlights/log4j-1.2.17.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -666,3 +666,180 @@ INFO    2020-06-16 13:33:59,198 [AWT-EventQueue-0] project.GUI  - Reservation ca
 TRACE   2020-06-16 13:33:59,198 [AWT-EventQueue-0] project.Reservations  - Reserving...
 TRACE   2020-06-16 13:33:59,533 [AWT-EventQueue-0] project.DBConnection  - Connect success
 ERROR   2020-06-16 13:34:01,418 [AWT-EventQueue-0] project.Reservations  - Not enought free tickets
+INFO    2020-06-16 14:34:03,366 [main] project.Program  - NEW PROGRAM STARTUP +++++++++++++++++
+TRACE   2020-06-16 14:34:03,513 [AWT-EventQueue-0] project.User  - User profile logger initialized
+TRACE   2020-06-16 14:34:03,513 [AWT-EventQueue-0] project.GUI  - GUI logger configured
+INFO    2020-06-16 14:34:11,346 [AWT-EventQueue-0] project.GUI  - Login pressed
+TRACE   2020-06-16 14:34:11,346 [AWT-EventQueue-0] project.User  - Login started
+TRACE   2020-06-16 14:34:11,979 [AWT-EventQueue-0] project.DBConnection  - Connect success
+INFO    2020-06-16 14:34:12,079 [AWT-EventQueue-0] project.User  - Login sucess
+INFO    2020-06-16 14:34:14,932 [AWT-EventQueue-0] project.GUI  - Menu: My reservations
+INFO    2020-06-16 14:34:16,250 [AWT-EventQueue-0] project.GUI  - Show reservations button
+TRACE   2020-06-16 14:34:16,673 [AWT-EventQueue-0] project.DBConnection  - Connect success
+TRACE   2020-06-16 14:34:16,688 [AWT-EventQueue-0] project.Reservations  - Showing user reservations in progress
+INFO    2020-06-16 14:34:23,349 [AWT-EventQueue-0] project.GUI  - Cancel reservation called
+TRACE   2020-06-16 14:34:23,349 [AWT-EventQueue-0] project.Reservations  - Cancel reservation in progress
+TRACE   2020-06-16 14:34:23,773 [AWT-EventQueue-0] project.DBConnection  - Connect success
+ERROR   2020-06-16 14:34:25,709 [AWT-EventQueue-0] project.Reservations  - Wrong ID number, other user reservation
+INFO    2020-06-16 14:34:30,954 [AWT-EventQueue-0] project.GUI  - Cancel reservation called
+TRACE   2020-06-16 14:34:30,954 [AWT-EventQueue-0] project.Reservations  - Cancel reservation in progress
+TRACE   2020-06-16 14:34:31,408 [AWT-EventQueue-0] project.DBConnection  - Connect success
+INFO    2020-06-16 14:34:33,173 [AWT-EventQueue-0] project.Reservations  - Reservation cancelled
+INFO    2020-06-16 14:34:34,744 [AWT-EventQueue-0] project.GUI  - Show reservations button
+TRACE   2020-06-16 14:34:35,177 [AWT-EventQueue-0] project.DBConnection  - Connect success
+TRACE   2020-06-16 14:34:35,177 [AWT-EventQueue-0] project.Reservations  - Showing user reservations in progress
+INFO    2020-06-16 14:34:39,674 [AWT-EventQueue-0] project.GUI  - Cancel reservation called
+TRACE   2020-06-16 14:34:39,674 [AWT-EventQueue-0] project.Reservations  - Cancel reservation in progress
+TRACE   2020-06-16 14:34:40,090 [AWT-EventQueue-0] project.DBConnection  - Connect success
+ERROR   2020-06-16 14:34:41,922 [AWT-EventQueue-0] project.Reservations  - Wrong ID number, other user reservation
+INFO    2020-06-16 14:34:58,425 [AWT-EventQueue-0] project.GUI  - Back to menu
+INFO    2020-06-16 14:35:02,156 [AWT-EventQueue-0] project.GUI  - Menu: User data
+INFO    2020-06-16 14:35:04,058 [AWT-EventQueue-0] project.GUI  - Refresh data call
+TRACE   2020-06-16 14:35:04,480 [AWT-EventQueue-0] project.DBConnection  - Connect success
+TRACE   2020-06-16 14:35:04,480 [AWT-EventQueue-0] project.User  - User data function started
+INFO    2020-06-16 14:35:11,089 [AWT-EventQueue-0] project.GUI  - Back to menu
+INFO    2020-06-16 14:35:12,191 [AWT-EventQueue-0] project.GUI  - Menu: My reservations
+INFO    2020-06-16 14:35:14,386 [AWT-EventQueue-0] project.GUI  - Show reservations button
+TRACE   2020-06-16 14:35:14,809 [AWT-EventQueue-0] project.DBConnection  - Connect success
+TRACE   2020-06-16 14:35:14,809 [AWT-EventQueue-0] project.Reservations  - Showing user reservations in progress
+INFO    2020-06-16 14:35:15,974 [AWT-EventQueue-0] project.GUI  - Back to menu
+INFO    2020-06-16 14:35:18,047 [AWT-EventQueue-0] project.GUI  - Menu: My reservations
+INFO    2020-06-16 14:35:19,233 [AWT-EventQueue-0] project.GUI  - Show reservations button
+TRACE   2020-06-16 14:35:19,650 [AWT-EventQueue-0] project.DBConnection  - Connect success
+TRACE   2020-06-16 14:35:19,650 [AWT-EventQueue-0] project.Reservations  - Showing user reservations in progress
+INFO    2020-06-16 14:35:20,220 [AWT-EventQueue-0] project.GUI  - Cancel reservation called
+TRACE   2020-06-16 14:35:20,220 [AWT-EventQueue-0] project.Reservations  - Cancel reservation in progress
+TRACE   2020-06-16 14:35:20,667 [AWT-EventQueue-0] project.DBConnection  - Connect success
+ERROR   2020-06-16 14:35:22,106 [AWT-EventQueue-0] project.Reservations  - Wrong ID number, other user reservation
+INFO    2020-06-16 14:35:23,039 [AWT-EventQueue-0] project.GUI  - Back to menu
+INFO    2020-06-16 14:35:24,712 [AWT-EventQueue-0] project.GUI  - Menu: Flight search
+INFO    2020-06-16 14:35:26,212 [AWT-EventQueue-0] project.GUI  - Show all flights called
+TRACE   2020-06-16 14:35:26,612 [AWT-EventQueue-0] project.DBConnection  - Connect success
+TRACE   2020-06-16 14:35:26,628 [AWT-EventQueue-0] project.Flight  - Show flight in progress
+INFO    2020-06-16 14:35:36,407 [AWT-EventQueue-0] project.GUI  - Reservation called
+TRACE   2020-06-16 14:35:36,407 [AWT-EventQueue-0] project.Reservations  - Reserving...
+TRACE   2020-06-16 14:35:36,823 [AWT-EventQueue-0] project.DBConnection  - Connect success
+INFO    2020-06-16 14:35:39,433 [AWT-EventQueue-0] project.Reservations  - Tickets reserved
+INFO    2020-06-16 14:35:40,936 [AWT-EventQueue-0] project.GUI  - Back to menu
+INFO    2020-06-16 14:35:42,217 [AWT-EventQueue-0] project.GUI  - Menu: My reservations
+INFO    2020-06-16 14:35:43,156 [AWT-EventQueue-0] project.GUI  - Show reservations button
+TRACE   2020-06-16 14:35:43,572 [AWT-EventQueue-0] project.DBConnection  - Connect success
+TRACE   2020-06-16 14:35:43,572 [AWT-EventQueue-0] project.Reservations  - Showing user reservations in progress
+INFO    2020-06-16 14:35:46,745 [AWT-EventQueue-0] project.GUI  - Back to menu
+INFO    2020-06-16 14:35:50,751 [AWT-EventQueue-0] project.GUI  - Menu: User data
+INFO    2020-06-16 14:35:52,990 [AWT-EventQueue-0] project.GUI  - Refresh data call
+TRACE   2020-06-16 14:35:53,406 [AWT-EventQueue-0] project.DBConnection  - Connect success
+TRACE   2020-06-16 14:35:53,406 [AWT-EventQueue-0] project.User  - User data function started
+INFO    2020-06-16 14:36:54,976 [AWT-EventQueue-0] project.GUI  - Back to menu
+INFO    2020-06-16 14:36:56,145 [AWT-EventQueue-0] project.GUI  - Menu: My reservations
+INFO    2020-06-16 14:36:57,408 [AWT-EventQueue-0] project.GUI  - Show reservations button
+TRACE   2020-06-16 14:36:57,810 [AWT-EventQueue-0] project.DBConnection  - Connect success
+TRACE   2020-06-16 14:36:57,810 [AWT-EventQueue-0] project.Reservations  - Showing user reservations in progress
+INFO    2020-06-16 14:36:59,797 [AWT-EventQueue-0] project.GUI  - Back to menu
+INFO    2020-06-16 14:37:05,739 [AWT-EventQueue-0] project.GUI  - Menu: My reservations
+INFO    2020-06-16 14:37:12,887 [AWT-EventQueue-0] project.GUI  - Show reservations button
+TRACE   2020-06-16 14:37:13,303 [AWT-EventQueue-0] project.DBConnection  - Connect success
+TRACE   2020-06-16 14:37:13,303 [AWT-EventQueue-0] project.Reservations  - Showing user reservations in progress
+INFO    2020-06-16 14:37:17,140 [AWT-EventQueue-0] project.GUI  - Cancel reservation called
+TRACE   2020-06-16 14:37:17,140 [AWT-EventQueue-0] project.Reservations  - Cancel reservation in progress
+TRACE   2020-06-16 14:37:17,562 [AWT-EventQueue-0] project.DBConnection  - Connect success
+ERROR   2020-06-16 14:37:19,713 [AWT-EventQueue-0] project.Reservations  - Wrong ID number, other user reservation
+INFO    2020-06-16 14:37:21,385 [AWT-EventQueue-0] project.GUI  - Back to menu
+INFO    2020-06-16 14:37:22,471 [AWT-EventQueue-0] project.GUI  - Menu: User data
+INFO    2020-06-16 14:37:23,720 [AWT-EventQueue-0] project.GUI  - Refresh data call
+TRACE   2020-06-16 14:37:24,174 [AWT-EventQueue-0] project.DBConnection  - Connect success
+TRACE   2020-06-16 14:37:24,174 [AWT-EventQueue-0] project.User  - User data function started
+INFO    2020-06-16 14:37:25,692 [AWT-EventQueue-0] project.GUI  - Back to menu
+INFO    2020-06-16 14:37:26,678 [AWT-EventQueue-0] project.GUI  - Menu: My reservations
+INFO    2020-06-16 14:37:29,546 [AWT-EventQueue-0] project.GUI  - Back to menu
+INFO    2020-06-16 14:37:36,289 [AWT-EventQueue-0] project.GUI  - Menu: My reservations
+INFO    2020-06-16 14:38:37,320 [AWT-EventQueue-0] project.GUI  - Back to menu
+INFO    2020-06-16 14:38:40,025 [AWT-EventQueue-0] project.GUI  - Menu: User data
+INFO    2020-06-16 14:38:41,526 [AWT-EventQueue-0] project.GUI  - Refresh data call
+TRACE   2020-06-16 14:38:41,959 [AWT-EventQueue-0] project.DBConnection  - Connect success
+TRACE   2020-06-16 14:38:41,959 [AWT-EventQueue-0] project.User  - User data function started
+INFO    2020-06-16 14:38:42,391 [AWT-EventQueue-0] project.GUI  - Refresh data call
+TRACE   2020-06-16 14:38:42,813 [AWT-EventQueue-0] project.DBConnection  - Connect success
+TRACE   2020-06-16 14:38:42,813 [AWT-EventQueue-0] project.User  - User data function started
+INFO    2020-06-16 14:38:42,860 [AWT-EventQueue-0] project.GUI  - Refresh data call
+TRACE   2020-06-16 14:38:43,276 [AWT-EventQueue-0] project.DBConnection  - Connect success
+TRACE   2020-06-16 14:38:43,276 [AWT-EventQueue-0] project.User  - User data function started
+INFO    2020-06-16 14:38:43,314 [AWT-EventQueue-0] project.GUI  - Refresh data call
+TRACE   2020-06-16 14:38:43,761 [AWT-EventQueue-0] project.DBConnection  - Connect success
+TRACE   2020-06-16 14:38:43,761 [AWT-EventQueue-0] project.User  - User data function started
+INFO    2020-06-16 14:38:43,814 [AWT-EventQueue-0] project.GUI  - Refresh data call
+TRACE   2020-06-16 14:38:44,261 [AWT-EventQueue-0] project.DBConnection  - Connect success
+TRACE   2020-06-16 14:38:44,261 [AWT-EventQueue-0] project.User  - User data function started
+INFO    2020-06-16 14:38:44,314 [AWT-EventQueue-0] project.GUI  - Refresh data call
+TRACE   2020-06-16 14:38:44,731 [AWT-EventQueue-0] project.DBConnection  - Connect success
+TRACE   2020-06-16 14:38:44,731 [AWT-EventQueue-0] project.User  - User data function started
+INFO    2020-06-16 14:39:25,494 [AWT-EventQueue-0] project.GUI  - Back to menu
+INFO    2020-06-16 14:39:27,718 [AWT-EventQueue-0] project.GUI  - Menu: My reservations
+INFO    2020-06-16 14:39:39,808 [AWT-EventQueue-0] project.GUI  - Cancel reservation called
+TRACE   2020-06-16 14:39:39,808 [AWT-EventQueue-0] project.Reservations  - Cancel reservation in progress
+TRACE   2020-06-16 14:39:40,230 [AWT-EventQueue-0] project.DBConnection  - Connect success
+INFO    2020-06-16 14:39:42,165 [AWT-EventQueue-0] project.Reservations  - Reservation cancelled
+INFO    2020-06-16 14:39:43,969 [AWT-EventQueue-0] project.GUI  - Show reservations button
+TRACE   2020-06-16 14:39:44,417 [AWT-EventQueue-0] project.DBConnection  - Connect success
+TRACE   2020-06-16 14:39:44,417 [AWT-EventQueue-0] project.Reservations  - Showing user reservations in progress
+INFO    2020-06-16 14:39:48,927 [AWT-EventQueue-0] project.GUI  - Cancel reservation called
+TRACE   2020-06-16 14:39:48,927 [AWT-EventQueue-0] project.Reservations  - Cancel reservation in progress
+TRACE   2020-06-16 14:39:49,365 [AWT-EventQueue-0] project.DBConnection  - Connect success
+ERROR   2020-06-16 14:39:51,185 [AWT-EventQueue-0] project.Reservations  - Wrong ID number, other user reservation
+INFO    2020-06-16 14:40:46,268 [AWT-EventQueue-0] project.GUI  - Back to menu
+INFO    2020-06-16 14:40:49,782 [AWT-EventQueue-0] project.GUI  - Menu: Close program
+INFO    2020-06-16 14:40:53,469 [main] project.Program  - NEW PROGRAM STARTUP +++++++++++++++++
+TRACE   2020-06-16 14:40:53,626 [AWT-EventQueue-0] project.User  - User profile logger initialized
+TRACE   2020-06-16 14:40:53,641 [AWT-EventQueue-0] project.GUI  - GUI logger configured
+INFO    2020-06-16 14:41:01,828 [AWT-EventQueue-0] project.GUI  - Login pressed
+TRACE   2020-06-16 14:41:01,828 [AWT-EventQueue-0] project.User  - Login started
+TRACE   2020-06-16 14:41:02,546 [AWT-EventQueue-0] project.DBConnection  - Connect success
+INFO    2020-06-16 14:41:02,646 [AWT-EventQueue-0] project.User  - Login sucess
+INFO    2020-06-16 14:41:05,198 [AWT-EventQueue-0] project.GUI  - Menu: User data
+INFO    2020-06-16 14:41:06,438 [AWT-EventQueue-0] project.GUI  - Refresh data call
+TRACE   2020-06-16 14:41:06,855 [AWT-EventQueue-0] project.DBConnection  - Connect success
+TRACE   2020-06-16 14:41:06,855 [AWT-EventQueue-0] project.User  - User data function started
+INFO    2020-06-16 14:41:07,725 [AWT-EventQueue-0] project.GUI  - Back to menu
+INFO    2020-06-16 14:41:09,277 [AWT-EventQueue-0] project.GUI  - Menu: My reservations
+INFO    2020-06-16 14:41:10,863 [AWT-EventQueue-0] project.GUI  - Show reservations button
+TRACE   2020-06-16 14:41:11,310 [AWT-EventQueue-0] project.DBConnection  - Connect success
+TRACE   2020-06-16 14:41:11,310 [AWT-EventQueue-0] project.Reservations  - Showing user reservations in progress
+INFO    2020-06-16 14:43:47,928 [main] project.Program  - NEW PROGRAM STARTUP +++++++++++++++++
+TRACE   2020-06-16 14:43:48,082 [AWT-EventQueue-0] project.User  - User profile logger initialized
+TRACE   2020-06-16 14:43:48,082 [AWT-EventQueue-0] project.GUI  - GUI logger configured
+INFO    2020-06-16 14:43:55,805 [AWT-EventQueue-0] project.GUI  - Login pressed
+TRACE   2020-06-16 14:43:55,805 [AWT-EventQueue-0] project.User  - Login started
+TRACE   2020-06-16 14:43:56,512 [AWT-EventQueue-0] project.DBConnection  - Connect success
+INFO    2020-06-16 14:43:56,591 [AWT-EventQueue-0] project.User  - Login sucess
+INFO    2020-06-16 14:44:02,700 [AWT-EventQueue-0] project.GUI  - Menu: My reservations
+INFO    2020-06-16 14:44:03,785 [AWT-EventQueue-0] project.GUI  - Show reservations button
+TRACE   2020-06-16 14:44:04,201 [AWT-EventQueue-0] project.DBConnection  - Connect success
+TRACE   2020-06-16 14:44:04,201 [AWT-EventQueue-0] project.Reservations  - Showing user reservations in progress
+INFO    2020-06-16 14:44:09,096 [AWT-EventQueue-0] project.GUI  - Cancel reservation called
+TRACE   2020-06-16 14:44:09,096 [AWT-EventQueue-0] project.Reservations  - Cancel reservation in progress
+TRACE   2020-06-16 14:44:09,512 [AWT-EventQueue-0] project.DBConnection  - Connect success
+INFO    2020-06-16 14:44:11,292 [AWT-EventQueue-0] project.Reservations  - Reservation cancelled
+INFO    2020-06-16 14:44:12,995 [AWT-EventQueue-0] project.GUI  - Show reservations button
+TRACE   2020-06-16 14:44:13,401 [AWT-EventQueue-0] project.DBConnection  - Connect success
+TRACE   2020-06-16 14:44:13,401 [AWT-EventQueue-0] project.Reservations  - Showing user reservations in progress
+INFO    2020-06-16 14:44:15,907 [AWT-EventQueue-0] project.GUI  - Cancel reservation called
+TRACE   2020-06-16 14:44:15,907 [AWT-EventQueue-0] project.Reservations  - Cancel reservation in progress
+TRACE   2020-06-16 14:44:16,322 [AWT-EventQueue-0] project.DBConnection  - Connect success
+ERROR   2020-06-16 14:44:17,787 [AWT-EventQueue-0] project.Reservations  - java.sql.SQLException: Illegal operation on empty result set.
+INFO    2020-06-16 14:44:18,927 [AWT-EventQueue-0] project.GUI  - Back to menu
+INFO    2020-06-16 14:44:21,477 [AWT-EventQueue-0] project.GUI  - Menu: Flight search
+INFO    2020-06-16 14:44:22,595 [AWT-EventQueue-0] project.GUI  - Show all flights called
+TRACE   2020-06-16 14:44:23,018 [AWT-EventQueue-0] project.DBConnection  - Connect success
+TRACE   2020-06-16 14:44:23,018 [AWT-EventQueue-0] project.Flight  - Show flight in progress
+INFO    2020-06-16 14:44:30,545 [AWT-EventQueue-0] project.GUI  - Reservation called
+TRACE   2020-06-16 14:44:30,545 [AWT-EventQueue-0] project.Reservations  - Reserving...
+TRACE   2020-06-16 14:44:30,977 [AWT-EventQueue-0] project.DBConnection  - Connect success
+INFO    2020-06-16 14:44:32,511 [AWT-EventQueue-0] project.Reservations  - Tickets reserved
+INFO    2020-06-16 14:44:33,982 [AWT-EventQueue-0] project.GUI  - Show all flights called
+TRACE   2020-06-16 14:44:34,451 [AWT-EventQueue-0] project.DBConnection  - Connect success
+TRACE   2020-06-16 14:44:34,451 [AWT-EventQueue-0] project.Flight  - Show flight in progress
+INFO    2020-06-16 14:44:35,916 [AWT-EventQueue-0] project.GUI  - Back to menu
+INFO    2020-06-16 14:44:37,102 [AWT-EventQueue-0] project.GUI  - Menu: My reservations
+INFO    2020-06-16 14:44:38,937 [AWT-EventQueue-0] project.GUI  - Show reservations button
+TRACE   2020-06-16 14:44:39,344 [AWT-EventQueue-0] project.DBConnection  - Connect success
+TRACE   2020-06-16 14:44:39,344 [AWT-EventQueue-0] project.Reservations  - Showing user reservations in progress
