@@ -5,7 +5,7 @@ import org.apache.log4j.PropertyConfigurator;
 
 public class DBConnection {
 	
-	static Logger logger = Logger.getLogger(Program.class);
+	static Logger logger = Logger.getLogger(DBConnection.class);
 	
 	public DBConnection() {
 		PropertyConfigurator.configure("log4j.properties");
@@ -19,7 +19,7 @@ public class DBConnection {
 			Class.forName("com.mysql.cj.jdbc.Driver").newInstance(); //register driver class
 			con=DriverManager.getConnection("jdbc:mysql://mysql.agh.edu.pl/bduchno1","bduchno1","ATdasTsLbXtUn6ur");	//create connection object		
 			//JOptionPane.showMessageDialog(null,"Connected to database");
-			logger.info("Connect success");
+			logger.trace("Connect success");
 			return con;
 		}
 		

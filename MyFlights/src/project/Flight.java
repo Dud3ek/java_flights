@@ -6,7 +6,7 @@ import org.apache.log4j.PropertyConfigurator;
 //Poka¿ loty, wyszukuj je po atrybutach -> zrobi³em na razie printowanie wyników bo nwm czy to zwracaæ jako liste czy co
 public class Flight {
 
-	static Logger logger = Logger.getLogger(Program.class);
+	static Logger logger = Logger.getLogger(Flight.class);
 	
 	public Flight() {
 		PropertyConfigurator.configure("log4j.properties");
@@ -14,7 +14,7 @@ public class Flight {
 	
 	public static ResultSet ShowFlights(java.sql.Connection conn) {	
 		try {
-			
+			logger.trace("Show flight in progress");
 			String query = "SELECT * FROM FlightsData";
 			PreparedStatement stmt = conn.prepareStatement(query);
 			ResultSet rs = stmt.executeQuery();
@@ -32,7 +32,7 @@ public class Flight {
 	{
 
 		try {
-			
+			logger.trace("Show ordered flights in progress");
 			String query = "SELECT * FROM FlightsData ORDER BY "+sort; 
 			PreparedStatement stmt = conn.prepareStatement(query);
 			ResultSet rs = stmt.executeQuery();

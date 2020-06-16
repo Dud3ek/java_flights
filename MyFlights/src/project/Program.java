@@ -10,7 +10,7 @@ public class Program {
 	public static void main(String[] args) {	
 		
 		PropertyConfigurator.configure("log4j.properties");
-		logger.info("New program startup");
+		logger.info("NEW PROGRAM STARTUP +++++++++++++++++");
 		
 		javax.swing.SwingUtilities.invokeLater(new Runnable() {
 			public void run() {

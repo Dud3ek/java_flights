@@ -8,6 +8,9 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+
 import net.proteanit.sql.DbUtils;
 import javax.swing.JButton;
 import java.awt.event.ActionEvent;
@@ -24,9 +27,8 @@ import javax.swing.JComboBox;
 
 @SuppressWarnings("serial")
 public class GUI extends JPanel {
-	public GUI() {
-		
-	}
+	
+	static Logger logger = Logger.getLogger(GUI.class);
 	
 	private final static int defH = 300;
 	private final static int defW = 400;
@@ -36,7 +38,7 @@ public class GUI extends JPanel {
 	private static Color purple = new Color(8, 11, 63);
 	private static JTextField loginfield;
 	private static JPasswordField passwordfield;
-	private static JTextField registerfield1;
+	private static JPasswordField registerfield1;
 	private static JTextField registerfield2;
 	private static JTextField registerfield3;
 	private static JTextField registerfield4;
@@ -46,12 +48,16 @@ public class GUI extends JPanel {
 	private static JTextField flytextfield2;
 	private static JTextField changepassfield;
 	private static JTextField changepassfieldold;
+	private static JTable table3;
 	
 @SuppressWarnings({ "rawtypes", "unchecked" })
 static void createGUI() {
 	
 	JFrame f = new JFrame("DBAir");
 	User user = new User();
+	
+	PropertyConfigurator.configure("log4j.properties");
+	logger.trace("GUI logger configured");
 	
 	/*
 	
@@ -87,6 +93,7 @@ static void createGUI() {
 	JPanel login = new JPanel();
 	JPanel register = new JPanel();
 	JPanel changepass = new JPanel();
+	JPanel userdata = new JPanel();
 	
 	//main panel
 	
@@ -121,6 +128,7 @@ static void createGUI() {
 		public void actionPerformed(ActionEvent e) {
 			f.setContentPane(reservations);
 			f.pack();
+			logger.info("Menu: My reservations");
 		}
 	});
 	button1_1.setFont(new Font("Source Serif Pro Black", Font.ITALIC, 14));
@@ -134,6 +142,7 @@ static void createGUI() {
 		public void actionPerformed(ActionEvent e) {
 			f.setContentPane(fly);
 			f.pack();
+			logger.info("Menu: Flight search");
 		}
 	});
 	button1_2.setFont(new Font("Source Serif Pro Black", Font.ITALIC, 14));
@@ -144,6 +153,13 @@ static void createGUI() {
 	
 	JButton button1_3 = new JGradientButton("<html> <center> Show my <br/> personal data </html>");
 	button1_3.setFont(new Font("Source Serif Pro Black", Font.ITALIC, 14));
+	button1_3.addActionListener(new ActionListener() {
+		public void actionPerformed(ActionEvent e) {
+			f.setContentPane(userdata);
+			f.pack();
+			logger.info("Menu: User data");
+		}
+	});
 	button1_3.setForeground(purple);
 	button1_3.setBackground(white);
 	button1_3.setBounds(140, 152, 120, 60);
@@ -155,6 +171,7 @@ static void createGUI() {
 		public void actionPerformed(ActionEvent e) {
 			f.setContentPane(changepass);
 			f.pack();
+			logger.info("Menu: Change pass");
 		}
 	});
 	button1_4.setForeground(purple);
@@ -170,6 +187,7 @@ static void createGUI() {
 			f.pack();
 			passwordfield.setText("");
 			loginfield.setText("");
+			logger.info("Menu: Logout");
 		}
 	});
 	button1_5.setForeground(purple);
@@ -184,6 +202,7 @@ static void createGUI() {
 	button1_6.setBounds(270, 229, 120, 60);
 	button1_6.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
+		logger.info("Menu: Close program");
 		f.dispatchEvent(new WindowEvent(f, WindowEvent.WINDOW_CLOSING));
 		}
 	});
@@ -213,6 +232,7 @@ static void createGUI() {
 	showtabBut.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			try {
+				logger.info("Show reservations button");
 				java.sql.Connection conn = DBConnection.ConnectDB();
 				ResultSet rs = Reservations.ShowUserReservations(conn, user.username);
 				table.setModel(DbUtils.resultSetToTableModel(rs));
@@ -220,6 +240,7 @@ static void createGUI() {
 			}
 			catch (Exception exept) {
 				exept.printStackTrace();
+				logger.error(exept);
 			}	
 		}
 	});
@@ -230,6 +251,7 @@ static void createGUI() {
 	JButton backButton = new JGradientButton("Back to menu");
 	backButton.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
+			logger.info("Back to menu");
 			f.setContentPane(panel1);
 			f.pack();
 		}
@@ -260,6 +282,7 @@ static void createGUI() {
 	JButton cancelresbut = new JGradientButton("Done");
 	cancelresbut.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
+			logger.info("Cancel reservation called");
 			int resID = Integer.parseInt(rescancelfield.getText());
 			Reservations.CancelReservation(user.username, resID);
 		}
@@ -282,7 +305,7 @@ static void createGUI() {
 	
 	// All flights panel
 	
-	fly.setPreferredSize(new Dimension((defW+200), defH));
+	fly.setPreferredSize(new Dimension((defW+400), defH));
 	fly.setBackground(purple);
 	fly.setLayout(null);
 	
@@ -290,11 +313,11 @@ static void createGUI() {
 	label3_1.setForeground(white);
 	label3_1.setHorizontalAlignment(SwingConstants.CENTER);
 	label3_1.setFont(new Font("Source Serif Pro Black", Font.ITALIC, 36));
-	label3_1.setBounds(10, 11, 380, 70);
+	label3_1.setBounds(110, 11, 380, 70);
 	fly.add(label3_1);
 	
 	JScrollPane scrollPane2 = new JScrollPane();
-	scrollPane2.setBounds(20, 120, 360, 160);
+	scrollPane2.setBounds(20, 120, 560, 160);
 	fly.add(scrollPane2);
 	
 	table2 = new JTable();
@@ -304,6 +327,7 @@ static void createGUI() {
 	showflyBut.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			try {
+				logger.info("Show all flights called");
 				java.sql.Connection conn = DBConnection.ConnectDB();
 				ResultSet rs = Flight.ShowFlights(conn);
 				table2.setModel(DbUtils.resultSetToTableModel(rs));
@@ -312,6 +336,7 @@ static void createGUI() {
 			
 			catch (Exception exept) {
 				exept.printStackTrace();
+				logger.error(exept);
 			}
 		}
 	});
@@ -322,12 +347,13 @@ static void createGUI() {
 	JButton backButton2 = new JGradientButton("Back to menu");
 	backButton2.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
+			logger.info("Back to menu");
 			f.setContentPane(panel1);
 			f.pack();
 		}
 	});
 	backButton2.setFont(new Font("Source Serif Pro Black", Font.ITALIC, 14));
-	backButton2.setBounds(210, 92, 170, 23);	
+	backButton2.setBounds(410, 92, 170, 23);	
 	fly.add(backButton2);
 	
 	//right side of flights
@@ -336,13 +362,14 @@ static void createGUI() {
 	flylabel1.setForeground(white);
 	flylabel1.setHorizontalAlignment(SwingConstants.CENTER);
 	flylabel1.setFont(new Font("Tahoma", Font.BOLD, 16));
-	flylabel1.setBounds(410, 11, 92, 18);
+	flylabel1.setBounds(610, 11, 92, 18);
 	fly.add(flylabel1);
 	
 	JComboBox flybox = new JComboBox(sortby.toArray());
 	flybox.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			try {
+				logger.info("Combobox interaction");
 				java.sql.Connection conn = DBConnection.ConnectDB();
 				JComboBox cb = (JComboBox)e.getSource();
 				String sort = (String)cb.getSelectedItem();
@@ -352,51 +379,53 @@ static void createGUI() {
 			}
 			catch (Exception exept) {
 				exept.printStackTrace();
+				logger.error(exept);
 			}
 		}
 	});
-	flybox.setBounds(494, 11, 86, 22);
+	flybox.setBounds(694, 11, 86, 22);
 	fly.add(flybox);
 	
 	JLabel flylabel2 = new JLabel("<html> <center> Make reservation </html>");
 	flylabel2.setForeground(white);
 	flylabel2.setHorizontalAlignment(SwingConstants.CENTER);
 	flylabel2.setFont(new Font("Source Serif Pro Black", Font.ITALIC, 30));
-	flylabel2.setBounds(410, 60, 170, 70);
+	flylabel2.setBounds(610, 60, 170, 70);
 	fly.add(flylabel2);
 	
 	JLabel flylabel3 = new JLabel("Flight ID");
 	flylabel3.setForeground(white);
 	flylabel3.setFont(new Font("Tahoma", Font.BOLD, 11));
-	flylabel3.setBounds(420, 156, 64, 14);
+	flylabel3.setBounds(620, 156, 64, 14);
 	fly.add(flylabel3);
 	
 	JLabel flylabel4 = new JLabel("<html> <center> Number of tickets </html>");
 	flylabel4.setFont(new Font("Tahoma", Font.BOLD, 11));
 	flylabel4.setForeground(white);
-	flylabel4.setBounds(420, 189, 64, 28);
+	flylabel4.setBounds(620, 189, 64, 28);
 	fly.add(flylabel4);
 	
 	flytextfield1 = new JTextField();
-	flytextfield1.setBounds(494, 153, 86, 20);
+	flytextfield1.setBounds(694, 153, 86, 20);
 	fly.add(flytextfield1);
 	flytextfield1.setColumns(10);
 	
 	flytextfield2 = new JTextField();
-	flytextfield2.setBounds(494, 193, 86, 20);
+	flytextfield2.setBounds(694, 193, 86, 20);
 	fly.add(flytextfield2);
 	flytextfield2.setColumns(10);
 	
 	JButton flybutton1 = new JButton("Done");
 	flybutton1.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
+			logger.info("Reservation called");
 				int flyID = Integer.parseInt(flytextfield1.getText());
 				int Noftickets = Integer.parseInt(flytextfield2.getText());
 				Reservations.Reserve(user.username, flyID, Noftickets);
 		}
 	});
 	flybutton1.setFont(new Font("Tahoma", Font.BOLD, 11));
-	flybutton1.setBounds(453, 232, 89, 23);
+	flybutton1.setBounds(653, 232, 89, 23);
 	fly.add(flybutton1);
 	
 	
@@ -439,6 +468,7 @@ static void createGUI() {
 	loginbutton.addActionListener(new ActionListener() {
 		@SuppressWarnings("deprecation")
 		public void actionPerformed(ActionEvent e) {
+				logger.info("Login pressed");
 				String uname = loginfield.getText();
 				String pass = passwordfield.getText();
 				user.Login(uname, pass);
@@ -455,6 +485,7 @@ static void createGUI() {
 	JButton registerbutton = new JGradientButton("Register");
 	registerbutton.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
+			logger.info("Register pressed");
 			f.setContentPane(register);
 			f.pack();
 			}
@@ -476,7 +507,7 @@ static void createGUI() {
 	registerlabel.setBounds(10, 11, 380, 51);
 	register.add(registerlabel);
 	
-	registerfield1 = new JTextField();
+	registerfield1 = new JPasswordField();
 	registerfield1.setBounds(220, 110, 86, 20);
 	register.add(registerfield1);
 	registerfield1.setColumns(10);
@@ -504,11 +535,13 @@ static void createGUI() {
 	JButton registerButt = new JGradientButton("Register");
 	registerButt.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
-			String uname = registerfield1.getText();
-			String pass = registerfield2.getText();
-			String name = registerfield3.getText();
-			String surname = registerfield4.getText();
-			String email = registerfield5.getText();
+			logger.info("Registration");
+			String uname = registerfield5.getText();
+			@SuppressWarnings("deprecation")
+			String pass = registerfield1.getText();
+			String name = registerfield2.getText();
+			String surname = registerfield3.getText();
+			String email = registerfield4.getText();
 			user.Register(uname, pass, name, surname, email);
 			f.setContentPane(login);
 			f.pack();
@@ -551,6 +584,7 @@ static void createGUI() {
 	JButton registerButtback = new JGradientButton("Back");
 	registerButtback.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
+			logger.info("Back to login");
 			f.setContentPane(login);
 			f.pack();
 			}
@@ -599,8 +633,9 @@ static void createGUI() {
 	JButton changepassbutton = new JGradientButton("Change");
 	changepassbutton.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
+			logger.info("Change password called");
 			String newpass = changepassfield.getText();
-			String oldpass = changepassfield.getText();
+			String oldpass = changepassfieldold.getText();
 			user.ChangePassword(oldpass, newpass);
 		}
 	});
@@ -611,6 +646,7 @@ static void createGUI() {
 	JButton changepassmenu = new JGradientButton("Menu");
 	changepassmenu.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
+			logger.info("Back to menu");
 			f.setContentPane(panel1);
 			f.pack();
 		}
@@ -620,6 +656,56 @@ static void createGUI() {
 	changepass.add(changepassmenu);
 	
 	// show user data fields
+	
+	userdata.setBackground(purple);
+	userdata.setLayout(null);
+	userdata.setPreferredSize(new Dimension(defW, defH));
+	
+	JLabel datalabel1 = new JLabel("Your user data panel");
+	datalabel1.setForeground(white);
+	datalabel1.setHorizontalAlignment(SwingConstants.CENTER);
+	datalabel1.setFont(new Font("Source Serif Pro Black", Font.ITALIC, 36));
+	datalabel1.setBounds(10, 11, 380, 70);
+	userdata.add(datalabel1);
+	
+	JScrollPane scrollPane3 = new JScrollPane();
+	scrollPane3.setBounds(20, 100, 360, 80);
+	userdata.add(scrollPane3);
+	
+	table3 = new JTable();
+	scrollPane3.setViewportView(table3);
+	
+	JButton databackmenu = new JGradientButton("Back to menu");
+	databackmenu.addActionListener(new ActionListener() {
+		public void actionPerformed(ActionEvent e) {
+			logger.info("Back to menu");
+			f.setContentPane(panel1);
+			f.pack();
+		}
+	});
+	databackmenu.setFont(new Font("Source Serif Pro Black", Font.ITALIC, 14));
+	databackmenu.setBounds(210, 210, 170, 23);
+	userdata.add(databackmenu);
+	
+	JButton datashow = new JGradientButton("Refresh user data");
+	datashow.addActionListener(new ActionListener() {
+		public void actionPerformed(ActionEvent e) {
+			try {
+				logger.info("Refresh data call");
+				java.sql.Connection conn = DBConnection.ConnectDB();
+				ResultSet rs = user.ShowUserData(conn);
+				table3.setModel(DbUtils.resultSetToTableModel(rs));
+				conn.close();		
+			}
+			catch (Exception exept) {
+				exept.printStackTrace();
+				logger.error(exept);
+			}
+		}
+	});
+	datashow.setFont(new Font("Source Serif Pro Black", Font.ITALIC, 14));
+	datashow.setBounds(20, 210, 170, 23);
+	userdata.add(datashow);
 	
 	
 	
