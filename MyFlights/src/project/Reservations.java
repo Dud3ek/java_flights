@@ -76,7 +76,7 @@ public class Reservations {
 			ResultSet rs = stmt1.executeQuery();
 			rs.next();
 			
-			if(username.contentEquals(rs.getString(1)))
+			if(username.equalsIgnoreCase(rs.getString(1)))
 			{
 				stmt3.setInt(1, rs.getInt(2));
 				stmt3.setInt(2, rs.getInt(3));

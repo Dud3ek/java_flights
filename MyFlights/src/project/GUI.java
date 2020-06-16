@@ -369,10 +369,10 @@ static void createGUI() {
 	flybox.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			try {
-				logger.info("Combobox interaction");
 				java.sql.Connection conn = DBConnection.ConnectDB();
 				JComboBox cb = (JComboBox)e.getSource();
 				String sort = (String)cb.getSelectedItem();
+				logger.info("Combobox interaction: "+sort);
 				ResultSet rs = Flight.ShowOrderedFlights(sort, conn);
 				table2.setModel(DbUtils.resultSetToTableModel(rs));
 				conn.close();

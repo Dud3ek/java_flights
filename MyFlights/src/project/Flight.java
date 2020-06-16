@@ -19,7 +19,6 @@ public class Flight {
 			PreparedStatement stmt = conn.prepareStatement(query);
 			ResultSet rs = stmt.executeQuery();
 			return rs;
-			
 			}
 		catch(Exception e1){
 			logger.error(e1);
