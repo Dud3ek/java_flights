@@ -6,12 +6,6 @@ import javax.swing.JOptionPane;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
-/* Metody zwi¹zane z Userem i jego danymi -> Tu chyba wszystko:
-Login
-Register
-ShowUserData - pokazuje dane usera który jest zalogowany (stworzona jest jego klasa)
-ChangePassword - zmienia has³o zalogowanego usera
-*/
 public class User {
 	
 	static Logger logger = Logger.getLogger(User.class);

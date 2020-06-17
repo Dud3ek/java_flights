@@ -3,7 +3,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
-//Poka¿ loty, wyszukuj je po atrybutach -> zrobi³em na razie printowanie wyników bo nwm czy to zwracaæ jako liste czy co
+
 public class Flight {
 
 	static Logger logger = Logger.getLogger(Flight.class);
@@ -27,7 +27,7 @@ public class Flight {
 	}
 	
 	
-	public static ResultSet ShowOrderedFlights(String sort, java.sql.Connection conn)	//Trzeba wymyœliæ sposób jak to filtrowaæ, ¿eby nie pisaæ tysi¹ca funkcji
+	public static ResultSet ShowOrderedFlights(String sort, java.sql.Connection conn)	
 	{
 
 		try {

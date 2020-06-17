@@ -58,33 +58,7 @@ static void createGUI() {
 	
 	PropertyConfigurator.configure("log4j.properties");
 	logger.trace("GUI logger configured");
-	
-	/*
-	
-	final String previous = "Previous";
-	final String next = "Next";
-	
-	final JPanel cards = new JPanel(new CardLayout());
-	
-	ActionListener myActList = new ActionListener() {
-		public void actionPerformed(ActionEvent e) {
-			CardLayout cl = (CardLayout) cards.getLayout();
-			if (e.getActionCommand().equals("Previous")) cl.previous(cards);
-			else if (e.getActionCommand().equals("Next")) cl.next(cards);
-		}
-	};
-	
-
-	JPanel control = new JPanel();
-	control.setPreferredSize(new Dimension(defWidth, defHeight));
-	
-	JButton b1 = new JButton("Previous");
-	JButton b2 = new JButton("Next");
-	b1.addActionListener(myActList);
-	b2.addActionListener(myActList);
-	f.add(control, BorderLayout.SOUTH);
-	*/
-	
+		
 	//declarations of panels
 	
 	JPanel panel1 = new JPanel();
@@ -185,6 +159,8 @@ static void createGUI() {
 		public void actionPerformed(ActionEvent e) {
 			f.setContentPane(login);
 			f.pack();
+			user.username="";
+			user.op=0;
 			passwordfield.setText("");
 			loginfield.setText("");
 			logger.info("Menu: Logout");
@@ -719,10 +695,6 @@ static void createGUI() {
 }
 
 
-// change password , logout zamiast flight search / make reservation
-// + list of all flights(reservation, sort)
-
-// cancel reservation
 
 
 

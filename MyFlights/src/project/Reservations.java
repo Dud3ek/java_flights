@@ -8,13 +8,6 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
 public class Reservations {
-/* Metody: 
- Reserve - sprawdz czy s¹ wolne miejsca, jeœli tak to zarezerwuj(dodaj rezerwacje do tabeli Reservations i zmniejsz iloœæ wolnych miejsc w FlightsData)
- Cancel,
- Show all reservations,
- show user reservations
-
- */
 
 	static Logger logger = Logger.getLogger(Reservations.class);
 	
