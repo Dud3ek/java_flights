@@ -1,4 +1,3 @@
-#--Login: bduchno1	Hasło: ATdasTsLbXtUn6ur	Baza: bduchno1
 SET foreign_key_checks = 0;
 DROP TABLE IF EXISTS Reservations, UserData, FlightsData, Airports, City;
 
